@@ -11,7 +11,7 @@ from io import BytesIO
 import random
 
 load_dotenv()
-TG_TOKEN = os.getenv('TG_TOKEN')
+TG_TOKEN = os.getenv('TG_TOKEN','6017558004:AAHMbEsMfoYQsGiRXE9aaqPxfUxlTkEsPpI')
 MODEL_DATA = os.getenv('MODEL_DATA', 'runwayml/stable-diffusion-v1-5')
 LOW_VRAM_MODE = (os.getenv('LOW_VRAM', 'true').lower() == 'true')
 USE_AUTH_TOKEN = (os.getenv('USE_AUTH_TOKEN', 'true').lower() == 'true')
